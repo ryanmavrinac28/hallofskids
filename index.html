@@ -66,7 +66,7 @@ color: red;
 text-transform:uppercase;
 text-shadow: 0 0 10px red;
 animation: blinker 3s linear infinite;
--webkit-animation-direction: alternate;
+
 
 }
 h2 {
@@ -110,9 +110,8 @@ text-decoration: none;
 audio {
 background-color: rgba(0, 0, 0, 0.3);
 }
-@-webkit-keyframes blinker {
-from {opacity: 1.0;}
-to {opacity: 0.0;}
+@keyframes blinker {  
+50% { opacity: 0; }
 }
 </style>
 <body>
