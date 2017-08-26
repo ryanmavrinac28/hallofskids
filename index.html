@@ -25,18 +25,6 @@ background: #222;
 color: #435160;
 font-family: "Open Sans", sans-serif;
 }
-h1{
-font-size:46px;
-color: red;
-text-transform:uppercase;
-text-shadow: 0 0 10px red;
-}
-h2 {
-font-size:25px;
-color: #fff;
-text-transform:uppercase;
-}
-
 figcaption:before,
 figcaption:after {
 background-color: red;
@@ -71,6 +59,23 @@ padding: 0 0 45px 0 !important;
 top: -45px;
 -moz-box-sizing: content-box;
 box-sizing: content-box;
+}
+  h1{
+font-size:46px;
+color: red;
+text-transform:uppercase;
+text-shadow: 0 0 10px red;
+}
+h2 {
+font-size:25px;
+color: #fff;
+text-transform:uppercase;
+text-decoration: blink;
+-webkit-animation-name: blinker;
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-timing-function:ease-in-out;
+-webkit-animation-direction: alternate;
 }
 h3 {
 width: 600px;
@@ -107,6 +112,10 @@ text-decoration: none;
 }
 audio {
 background-color: rgba(0, 0, 0, 0.3);
+}
+@-webkit-keyframes blinker {
+from {opacity: 1.0;}
+to {opacity: 0.0;}
 }
 </style>
 <body>
